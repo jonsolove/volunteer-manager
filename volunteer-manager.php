@@ -16,8 +16,6 @@ register_deactivation_hook( __FILE__, 'volman_deactivate' );
 
 add_action( 'admin_menu', 'volunteer_manager_menu' );
 
-
-
 function volunteer_manager_menu() {
 	add_menu_page( 'Volunteer', 'Volunteer', 'volunteer', 'volman', 'volunteer_manager_main');
 	add_submenu_page( 'volman', 'Calendar', 'Calendar', 'volunteer', 'volman-cal', 'volunteer_manager_calendar');
@@ -52,9 +50,7 @@ function volunteer_manager_profile() {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
 
-	echo '<div class="wrap">';
-	echo '<p>Volunteer Profile will live here.</p>';
-	echo '</div>';
+	require_once('volunteer-profile.php');
 }
 
 function volunteer_manager_admin() {

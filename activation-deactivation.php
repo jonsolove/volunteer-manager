@@ -13,6 +13,7 @@ function volman_activate() {
 
 }
 
+/* I think some of this should only occur on uninstall, not deactivate, but I'm not sure yet. */
 function volman_deactivate() {
 	remove_action( 'admin_menu', 'volunteer_manager_menu' );
 	
