@@ -3,4 +3,4 @@ VolunteerManagementPlugin
 
 A WordPress Volunteer Management Plugin.
 
-Please refer to the wiki on https://github.com/jonsolove/volunteer-manager for more info.
+Please refer to the wiki (https://github.com/jonsolove/volunteer-manager/wiki) for more info.
